@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man Sells Dog for 5 SOL - News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .news-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <h1>Man Sells Dog for 5 SOL</h1>
+        <img src="image.png" alt="Dog Sold for 5 SOL">
+        <p id="article-text"></p>
+    </div>
+    
+    <script>
+        const randomArticles = [
+            "In an unexpected turn of events, a man from Florida reportedly sold his beloved German Shepherd, Daisy, for just 5 SOL, claiming he needed funds cus he got rugged on libra coin. Neighbors were shocked, but the new owner says the dog is enjoying its new home.",
+            "A crypto enthusiast made headlines today after trading his loyal dog for 5 SOL. When questioned about his decision, he stated, 'I believe in the future of Solana more than I do in companionship.' The dog's new owner, however, is thrilled with the deal.",
+            "In what many are calling the worst trade of the year, a man exchanged his German Shepherd for a mere 5 SOL. Reports suggest the seller immediately regretted his decision and tried to buy the dog back, but the new owner refused to sell."
+        ];
+        document.getElementById("article-text").innerText = randomArticles[Math.floor(Math.random() * randomArticles.length)];
+    </script>
+</body>
+</html>
